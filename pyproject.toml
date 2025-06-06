@@ -15,6 +15,10 @@ version = "0.1.0"
 # A short, one-sentence description of your project.
 description = "A collection of shared utility functions for the MACH portfolio project's backend services."
 
+# Explicitly list the Core package directory.
+[tool.setuptools]
+packages = ["core"]
+
 [tool.setuptools.packages.find]
 where = ["."]  # look in the root directory
 include = ["core*"]  # find packages that start with 'core'
