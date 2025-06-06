@@ -10,8 +10,6 @@ build-backend = "setuptools.build_meta"
 # This section contains all the descriptive information about your specific package.
 # This is what will be used by pip and will show up on package registries like PyPI.
 [project]
-# The official name of your package on registries.
-# When you 'pip install', pip looks for this name. It's convention to use hyphens.
 name = "mach-core-utilities"
 
 # The current version of your package. It's good practice to follow semantic versioning.
@@ -19,6 +17,11 @@ version = "0.1.0"
 
 # A short, one-sentence description of your project.
 description = "A collection of shared utility functions for the MACH portfolio project's backend services."
+
+[tool.setuptools.packages.find]
+where = ["."]  # look in the root directory
+include = ["core*"]  # find packages that start with 'core'
+exclude = ["tests*"] # exclude tests from the package
 
 # --- Optional but Recommended Metadata ---
 
