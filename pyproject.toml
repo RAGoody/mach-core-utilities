@@ -1,0 +1,51 @@
+# --- Build System Configuration ---
+# This section tells 'pip' and other build tools what backend to use to build your package.
+# For most standard packages, this setuptools configuration is all you need and can be
+# considered standard boilerplate.
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# --- Project Metadata ---
+# This section contains all the descriptive information about your specific package.
+# This is what will be used by pip and will show up on package registries like PyPI.
+[project]
+# The official name of your package on registries.
+# When you 'pip install', pip looks for this name. It's convention to use hyphens.
+name = "mach-core-utilities"
+
+# The current version of your package. It's good practice to follow semantic versioning.
+version = "0.1.0"
+
+# A short, one-sentence description of your project.
+description = "A collection of shared utility functions for the MACH portfolio project's backend services."
+
+# --- Optional but Recommended Metadata ---
+
+# Specifies the file to use for the package's long description on PyPI.
+readme = "README.md"
+
+# Specifies the minimum version of Python required to run your code.
+requires-python = ">=3.9"
+
+# The license for your code.
+license = { text = "MIT License" } # Or another license like "Apache-2.0"
+
+# Information about the author(s).
+authors = [
+    { name = "Your Name", email = "ryan.a.goodwin@gmail.com" }
+]
+
+# If your shared library itself had dependencies on other packages, you would list them here.
+# The get_secret() function only uses the standard library, so this is currently empty.
+# Example:
+# dependencies = [
+#   "requests>=2.20.0",
+#   "pydantic"
+# ]
+
+# --- Optional Project URLs ---
+# Links that will appear on your package's registry page.
+[project.urls]
+Homepage = "https://github.com/RAGoody/mach-core-utilities"
+"Bug Tracker" = "https://github.com/RAGoody/mach-core-utilities/issues"
