@@ -1,7 +1,4 @@
 # --- Build System Configuration ---
-# This section tells 'pip' and other build tools what backend to use to build your package.
-# For most standard packages, this setuptools configuration is all you need and can be
-# considered standard boilerplate.
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
@@ -32,7 +29,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 
 # The license for your code.
-license = { text = "MIT License" } # Or another license like "Apache-2.0"
+license = { text = "MIT License" }
 
 # Information about the author(s).
 authors = [
