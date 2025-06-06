@@ -10,7 +10,7 @@ build-backend = "setuptools.build_meta"
 name = "mach-core-utilities"
 
 # The current version of your package. It's good practice to follow semantic versioning.
-version = "0.1.0"
+version = "0.1.1"
 
 # A short, one-sentence description of your project.
 description = "A collection of shared utility functions for the MACH portfolio project's backend services."
