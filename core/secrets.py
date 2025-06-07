@@ -1,3 +1,5 @@
+import os
+
 def getSecret(secretName):
     """
     Retrieve secret from secretName
